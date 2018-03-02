@@ -210,4 +210,13 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionPersonal($name = null, $age = null)
+    {
+      ($name == null) ? $name = 'Thiago Dias' : $name;
+      ($age == null) ? $age = 20 : $age;
+      return $this->render('personal',
+        ['name' => $name, 'age' => $age]
+      );
+    }
 }
