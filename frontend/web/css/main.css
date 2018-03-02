@@ -1,0 +1,10 @@
+.navbar-blue{
+  background-color: #3498db;
+}
+.navbar-blue a{
+  color:#ecf0f1;
+}
+.navbar-blue li a:hover{
+  background-color: #2980b9;
+  color: #fff;
+}
